@@ -132,6 +132,7 @@ function SettingsView(props: ComponentProps<typeof Settings> & { localeProp: str
   };
 
   const localeOptions = useMemo(() => {
+    console.log(router.locales);
     return (router.locales || []).map((locale) => ({
       value: locale,
       // FIXME
